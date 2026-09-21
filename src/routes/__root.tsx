@@ -12,7 +12,6 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { SiteLayout } from "@/components/layout/site-layout";
 
-
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -38,7 +37,6 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
